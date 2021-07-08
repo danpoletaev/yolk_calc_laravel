@@ -1,0 +1,22 @@
+@import "../config";
+
+.calc_button {
+  border: 1px solid;
+  border-color: #e4e2e2;
+  background: #f7f8fb;
+  border-radius: 5px;
+  color: #00538b;
+  font-size: 16px;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+    border-color: #005891;
+  }
+}
+
+@media(min-width: $tablet) {
+  .calc_button {
+    padding: 15px;
+    font-size: 20px;
+  }
+}

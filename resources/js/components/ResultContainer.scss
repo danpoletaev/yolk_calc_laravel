@@ -1,0 +1,42 @@
+@import "../config";
+
+.result_container {
+  background-color: rgba(131,196,220,.2);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.duty_label {
+  font-size: 14px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004e81;
+  background-color: rgba(131,196,220,.3);
+  font-weight: 300;
+}
+
+.showresult {
+  padding: 25px 5px 25px 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 32px;
+  color: #004e81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+@media(min-width: $tablet) {
+  .duty_label {
+    font-size: 18px;
+  }
+  .showresult {
+    font-size: 40px;
+    padding: 30px 5px 30px 5px;
+  }
+}
