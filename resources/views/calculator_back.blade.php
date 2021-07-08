@@ -22,18 +22,18 @@
 </head>
 <body class="antialiased">
 
-<div class="main_container">
-    <div class="calc-div"></div>
-    <div class="cont-calc-text">
-        <div class="container-text">
-            <img src="images/top-triangle.png" alt="alt" class="arrow_down"/>
-            <h1 class="calc-title">Stamp duty</h1>
-            <h1 class="calc-title calc-title-bold"><strong>calculator</strong></h1>
-            <span class="calc_break"></span>
-            <p class="calc-description">Calculate how much stamp duty you pay for a residential UK property both during and after the stamp duty holiday.</p>
+<div class="mainContainer">
+    <div class="calcDiv"></div>
+    <div class="containerCalcText">
+        <div class="containerText">
+            <img src="images/top-triangle.png" alt="alt" class="arrowDown"/>
+            <h1 class="calculatorTitle">Stamp duty</h1>
+            <h1 class="calculatorTitle calculatorTitleBold"><strong>calculator</strong></h1>
+            <span class="calcBreak"></span>
+            <p class="calcDescription">Calculate how much stamp duty you pay for a residential UK property both during and after the stamp duty holiday.</p>
         </div>
-        <div class="only-calc-cont">
-            <img src="images/top-triangle.png" alt="alt" class="arrow_top"/>
+        <div class="onlyCalcContainer">
+            <img src="images/top-triangle.png" alt="alt" class="arrowTop"/>
             <div id="calculator"/>
         </div>
     </div>
