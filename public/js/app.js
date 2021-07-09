@@ -1927,7 +1927,7 @@ var CalcButton = function CalcButton(_ref) {
       active = _ref.active;
   console.log(active);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-    className: "calc_button",
+    className: "calcButton",
     onClick: handleClick,
     style: active ? {
       background: "#005891",
@@ -1960,8 +1960,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_DropDownSelect__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/DropDownSelect */ "./resources/js/components/DropDownSelect.js");
 /* harmony import */ var _components_RangeInput__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/RangeInput */ "./resources/js/components/RangeInput.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _Example__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Example */ "./resources/js/components/Example.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -1981,7 +1980,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -2228,19 +2226,19 @@ var Calculator = function Calculator() {
     setTotalDuty(duty);
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-    className: "calculator_container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    className: "calculatorContainer",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("label", {
       children: "Where are you buying?"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_DropDownSelect__WEBPACK_IMPORTED_MODULE_5__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_DropDownSelect__WEBPACK_IMPORTED_MODULE_5__.default, {
       handleClick: function handleClick(value) {
         return setRegion(value);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("label", {
       children: " Are you a first time buyer? "
-    }), console.log(activeBtn), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-      className: "button_container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
+    }), console.log(activeBtn), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      className: "buttonContainer",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
         text: "Yes",
         handleClick: function handleClick() {
           setIsFirst(true);
@@ -2253,7 +2251,7 @@ var Calculator = function Calculator() {
           }));
         },
         active: activeBtn.btn1
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
         text: "No",
         handleClick: function handleClick() {
           setIsFirst(false);
@@ -2264,14 +2262,14 @@ var Calculator = function Calculator() {
         },
         active: activeBtn.btn2
       })]
-    }), !isFirst && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
+    }), !isFirst && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("label", {
       style: {
         marginTop: '15px'
       },
       children: " Will this be your only property? "
-    }), !isFirst && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-      className: "button_container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
+    }), !isFirst && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      className: "buttonContainer",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
         text: "Yes",
         handleClick: function handleClick() {
           setIsAdditional(false);
@@ -2281,7 +2279,7 @@ var Calculator = function Calculator() {
           }));
         },
         active: activeBtn.btn3
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_CalcButton__WEBPACK_IMPORTED_MODULE_2__.default, {
         text: "No",
         handleClick: function handleClick() {
           setIsAdditional(true);
@@ -2292,28 +2290,28 @@ var Calculator = function Calculator() {
         },
         active: activeBtn.btn4
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-      className: "price_container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      className: "priceContainer",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
         className: "property",
         children: "Property price:"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
-        className: "property_price",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
+        className: "propertyPrice",
         children: formatNumber(price, 2)
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_PriceInput__WEBPACK_IMPORTED_MODULE_3__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_PriceInput__WEBPACK_IMPORTED_MODULE_3__.default, {
       handlePriceChange: handlePriceChange,
       value: formatNumber(price, 0, false)
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_RangeInput__WEBPACK_IMPORTED_MODULE_6__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_RangeInput__WEBPACK_IMPORTED_MODULE_6__.default, {
       price: price,
       handleChange: handlePriceChange
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ResultContainer__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_ResultContainer__WEBPACK_IMPORTED_MODULE_4__.default, {
       header: "Your stamp duty will be",
       result_value: formatNumber(totalDuty, 2)
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-      className: "alert_text_container",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
-        className: "alert_text",
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+      className: "alertTextContainer",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
+        className: "alertText",
         children: "You do not qualify for first-time buyer stamp duty tax relief because the property is over \xA3500,000.00. Normal tax rates apply"
       })
     })]
@@ -2323,7 +2321,7 @@ var Calculator = function Calculator() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Calculator);
 
 if (document.getElementById('calculator')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_7__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Calculator, {}), document.getElementById('calculator'));
+  react_dom__WEBPACK_IMPORTED_MODULE_7__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Calculator, {}), document.getElementById('calculator'));
 }
 
 /***/ }),
@@ -2355,7 +2353,7 @@ var DropDownSelect = function DropDownSelect(_ref) {
     onChange: function onChange(event) {
       return handleClick(event.target.value);
     },
-    className: "select_region",
+    className: "selectRegion",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
       value: "England",
       children: "England"
@@ -2448,9 +2446,9 @@ var PriceInput = function PriceInput(_ref) {
   var value = _ref.value,
       handlePriceChange = _ref.handlePriceChange;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "input_group",
+    className: "inputGroup",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-      className: "symbol_span",
+      className: "symbolSpan",
       children: "\xA3"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
       type: "text",
@@ -2464,7 +2462,7 @@ var PriceInput = function PriceInput(_ref) {
       onChange: function onChange(event) {
         return handlePriceChange(event);
       },
-      className: "input_price"
+      className: "inputPrice"
     })]
   });
 };
@@ -2495,7 +2493,7 @@ var RangeInput = function RangeInput(_ref) {
   var price = _ref.price,
       handleChange = _ref.handleChange;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "range_container",
+    className: "rangeContainer",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
       type: "range",
       min: "10000",
@@ -2536,9 +2534,9 @@ var ResultContainer = function ResultContainer(_ref) {
   var header = _ref.header,
       result_value = _ref.result_value;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "result_container",
+    className: "resultContainer",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "duty_label",
+      className: "dutyLabel",
       children: header
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "showresult",
@@ -7011,7 +7009,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".calc_button {\n  border: 1px solid;\n  border-color: #e4e2e2;\n  background: #f7f8fb;\n  border-radius: 5px;\n  color: #00538b;\n  font-size: 16px;\n  padding: 10px;\n}\n.calc_button:hover {\n  cursor: pointer;\n  border-color: #005891;\n}\n\n@media (min-width: 768px) {\n  .calc_button {\n    padding: 15px;\n    font-size: 20px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".calcButton {\n  border: 1px solid;\n  border-color: #e4e2e2;\n  background: #f7f8fb;\n  border-radius: 5px;\n  color: #00538b;\n  font-size: 16px;\n  padding: 10px;\n}\n@media (hover: hover) {\n  .calcButton:hover {\n    cursor: pointer;\n    border-color: #005891;\n  }\n}\n\n@media (min-width: 768px) {\n  .calcButton {\n    padding: 15px;\n    font-size: 20px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7035,7 +7033,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".calculator_container {\n  display: flex;\n  flex-direction: column;\n  border-radius: 20px;\n  padding: 30px;\n  box-shadow: -1px 1px 10px #e4e2e2;\n  font-family: Lato, sans-serif;\n  background: white;\n}\n\nlabel, select {\n  margin-bottom: 15px;\n}\n\nlabel, p.property {\n  color: #58677d;\n  text-align: left;\n  font-size: 16px;\n}\n\np.property_price {\n  color: #00538b;\n  font-weight: 700;\n  font-size: 16px;\n}\n\n.button_container {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 1fr;\n  gap: 0 30px;\n  grid-template-areas: \". .\";\n}\n\n.price_container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.alert_text {\n  font-size: 14px;\n  color: #58677d;\n  width: 75%;\n  text-align: center;\n}\n\n.alert_text_container {\n  margin-top: 15px;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n*:focus {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  outline-width: 0;\n  outline: none !important;\n  box-shadow: 1px 1px 1px 1px #e4e2e2;\n}\n\n@media (min-width: 768px) {\n  label, p.property, p.property_price {\n    font-size: 20px;\n  }\n\n  .alert_text {\n    font-size: 18px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".calculatorContainer {\n  display: flex;\n  flex-direction: column;\n  border-radius: 20px;\n  padding: 30px;\n  box-shadow: -1px 1px 10px #e4e2e2;\n  font-family: Lato, sans-serif;\n  background: white;\n}\n\nlabel, select {\n  margin-bottom: 15px;\n}\n\nlabel, p.property {\n  color: #58677d;\n  text-align: left;\n  font-size: 16px;\n}\n\np.propertyPrice {\n  color: #00538b;\n  font-weight: 700;\n  font-size: 16px;\n}\n\n.buttonContainer {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 1fr;\n  gap: 0 30px;\n  grid-template-areas: \". .\";\n}\n\n.priceContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 15px;\n}\n\n.alertText {\n  font-size: 14px;\n  color: #58677d;\n  width: 75%;\n  text-align: center;\n}\n\n.alertTextContainer {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 15px;\n}\n\n*:focus {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  outline-width: 0;\n  outline: none !important;\n  box-shadow: 1px 1px 1px 1px #e4e2e2;\n}\n\n@media (min-width: 768px) {\n  label, p.property, p.propertyPrice {\n    font-size: 20px;\n  }\n\n  .alertText {\n    font-size: 18px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7059,7 +7057,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "select.select_region {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  color: #00538b;\n  border: 1px solid #e4e2e2;\n  border-radius: 5px;\n  padding: 15px;\n  font-size: 16px;\n  background: #f7f8fb url(\"data:image/svg+xml;utf8,<svg fill='%2300538b' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>\") no-repeat;\n  background-position-x: 98%;\n  background-position-y: 50%;\n}\nselect.select_region:hover {\n  cursor: pointer;\n}\n\n@media (min-width: 768px) {\n  select.select_region {\n    font-size: 20px;\n    padding: 20px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "select.selectRegion {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  color: #00538b;\n  border: 1px solid #e4e2e2;\n  border-radius: 5px;\n  padding: 15px;\n  font-size: 16px;\n  background: #f7f8fb url(\"data:image/svg+xml;utf8,<svg fill='%2300538b' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>\") no-repeat;\n  background-position-x: 98%;\n  background-position-y: 50%;\n}\n@media (hover: hover) {\n  select.selectRegion:hover {\n    cursor: pointer;\n  }\n}\n\n@media (min-width: 768px) {\n  select.selectRegion {\n    font-size: 20px;\n    padding: 20px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7083,7 +7081,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "input.input_price {\n  -webkit-appearance: none;\n  flex: 1;\n  padding: 15px 0 15px 12px;\n  border: none;\n  font-size: 16px;\n  border-radius: 0 5px 5px 0;\n  color: #00538b;\n}\n\n.input_group {\n  display: flex;\n  margin-bottom: 15px;\n  border-radius: 5px;\n  border: 1px solid #e4e2e2;\n  background: #e1e5eb;\n}\n\nspan.symbol_span {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #e1e5eb;\n  color: #00538b;\n  width: 42px;\n  font-size: 15px;\n}\n\n@media (min-width: 768px) {\n  input.input_price, span.symbol_span {\n    font-size: 19px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "input.inputPrice {\n  -webkit-appearance: none;\n  flex: 1;\n  padding: 15px 0 15px 12px;\n  border: none;\n  font-size: 16px;\n  border-radius: 0 5px 5px 0;\n  color: #00538b;\n}\n\n.inputGroup {\n  display: flex;\n  margin-bottom: 15px;\n  border-radius: 5px;\n  border: 1px solid #e4e2e2;\n}\n\nspan.symbolSpan {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #e4e2e2;\n  color: #00538b;\n  width: 42px;\n  font-size: 16px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7107,7 +7105,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".range_container {\n  margin-bottom: 15px;\n}\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: #ced4da;\n  height: 6px;\n  border-radius: 5px;\n  color: #ced4da;\n  cursor: pointer;\n}\n\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n  height: 23px;\n  width: 23px;\n  border-radius: 50%;\n  background: #00538b;\n  cursor: pointer;\n  border: 3px solid white;\n}\n\ninput[type=range]::-moz-range-thumb {\n  height: 23px;\n  width: 23px;\n  border-radius: 50%;\n  background: #00538b;\n  cursor: pointer;\n  border: 3px solid white;\n}\n\ninput[type=range]::-ms-thumb {\n  height: 23px;\n  width: 23px;\n  border-radius: 50%;\n  background: #00538b;\n  cursor: pointer;\n  border: 3px solid white;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".rangeContainer {\n  margin-bottom: 15px;\n}\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: #ced4da;\n  height: 6px;\n  border-radius: 5px;\n  color: #ced4da;\n  cursor: pointer;\n}\n\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n  height: 23px;\n  width: 23px;\n  border-radius: 50%;\n  background: #00538b;\n  cursor: pointer;\n  border: 3px solid white;\n}\n\ninput[type=range]::-moz-range-thumb {\n  height: 23px;\n  width: 23px;\n  border-radius: 50%;\n  background: #00538b;\n  cursor: pointer;\n  border: 3px solid white;\n}\n\ninput[type=range]::-ms-thumb {\n  height: 23px;\n  width: 23px;\n  border-radius: 50%;\n  background: #00538b;\n  cursor: pointer;\n  border: 3px solid white;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7131,7 +7129,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".result_container {\n  background-color: rgba(131, 196, 220, 0.2);\n  border-radius: 5px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n}\n\n.duty_label {\n  font-size: 14px;\n  min-height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #004e81;\n  background-color: rgba(131, 196, 220, 0.3);\n  font-weight: 300;\n}\n\n.showresult {\n  padding: 25px 5px 25px 5px;\n  border-radius: 5px;\n  overflow: hidden;\n  font-size: 32px;\n  color: #004e81;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n}\n\n@media (min-width: 768px) {\n  .duty_label {\n    font-size: 18px;\n  }\n\n  .showresult {\n    font-size: 40px;\n    padding: 30px 5px 30px 5px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".resultContainer {\n  background-color: rgba(131, 196, 220, 0.2);\n  border-radius: 5px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n}\n\n.dutyLabel {\n  font-size: 14px;\n  min-height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #004e81;\n  background-color: rgba(131, 196, 220, 0.2);\n  font-weight: 300;\n}\n\n.showresult {\n  padding: 25px 5px 25px 5px;\n  border-radius: 5px;\n  overflow: hidden;\n  font-size: 16px;\n  color: #004e81;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n}\n\n@media (min-width: 768px) {\n  .dutyLabel {\n    font-size: 18px;\n  }\n\n  .showresult {\n    font-size: 40px;\n    padding: 30px 5px 30px 5px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

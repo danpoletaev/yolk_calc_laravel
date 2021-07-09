@@ -1,21 +1,21 @@
-@import "../config";
+@import "../variables";
 
-.result_container {
-  background-color: rgba(131,196,220,.2);
+.resultContainer {
+  background-color: $result-container-color;
   border-radius: 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.duty_label {
-  font-size: 14px;
+.dutyLabel {
+  font-size: $phone-alert-f-size;
   min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #004e81;
-  background-color: rgba(131,196,220,.3);
+  color: $light-blue-color;
+  background-color: $result-container-color;
   font-weight: 300;
 }
 
@@ -23,8 +23,8 @@
   padding: 25px 5px 25px 5px;
   border-radius: 5px;
   overflow: hidden;
-  font-size: 32px;
-  color: #004e81;
+  font-size: $phone-font-size;
+  color: $light-blue-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,11 +32,11 @@
 }
 
 @media(min-width: $tablet) {
-  .duty_label {
-    font-size: 18px;
+  .dutyLabel {
+    font-size: $tablet-alert-f-size;
   }
   .showresult {
-    font-size: 40px;
+    font-size: $tablet-result-f-size;
     padding: 30px 5px 30px 5px;
   }
 }
