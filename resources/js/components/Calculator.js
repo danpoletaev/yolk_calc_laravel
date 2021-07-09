@@ -284,10 +284,10 @@ const Calculator = () => {
 
             <ResultContainer header='Your stamp duty will be' result_value={formatNumber(totalDuty, 2)}/>
 
-            <div className='alertTextContainer'>
+            {price > 500000 && <div className='alertTextContainer'>
                 <p className='alertText'>You do not qualify for first-time buyer stamp duty tax relief because the property is over
                     £500,000.00. Normal tax rates apply</p>
-            </div>
+            </div>}
         </div>
     )
 }

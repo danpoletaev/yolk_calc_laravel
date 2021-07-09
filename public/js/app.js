@@ -2308,7 +2308,7 @@ var Calculator = function Calculator() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_ResultContainer__WEBPACK_IMPORTED_MODULE_4__.default, {
       header: "Your stamp duty will be",
       result_value: formatNumber(totalDuty, 2)
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+    }), price > 500000 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "alertTextContainer",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
         className: "alertText",
@@ -7009,7 +7009,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".calcButton {\n  border: 1px solid;\n  border-color: #e4e2e2;\n  background: #f7f8fb;\n  border-radius: 5px;\n  color: #00538b;\n  font-size: 16px;\n  padding: 10px;\n}\n@media (hover: hover) {\n  .calcButton:hover {\n    cursor: pointer;\n    border-color: #005891;\n  }\n}\n\n@media (min-width: 768px) {\n  .calcButton {\n    padding: 15px;\n    font-size: 20px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".calcButton {\n  border: 1px solid;\n  border-color: #e4e2e2;\n  background: #f7f8fb;\n  border-radius: 5px;\n  color: #00538b;\n  font-size: 16px;\n  padding: 10px;\n}\n@media (hover: hover) {\n  .calcButton:hover {\n    cursor: pointer;\n    border-color: #005891;\n  }\n}\n\n@media (min-width: 768px) {\n  .calcButton {\n    font-size: 18px;\n  }\n}\n@media (min-width: 1281px) {\n  .calcButton {\n    padding: 15px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7033,7 +7033,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".calculatorContainer {\n  display: flex;\n  flex-direction: column;\n  border-radius: 20px;\n  padding: 30px;\n  box-shadow: -1px 1px 10px #e4e2e2;\n  font-family: Lato, sans-serif;\n  background: white;\n}\n\nlabel, select {\n  margin-bottom: 15px;\n}\n\nlabel, p.property {\n  color: #58677d;\n  text-align: left;\n  font-size: 16px;\n}\n\np.propertyPrice {\n  color: #00538b;\n  font-weight: 700;\n  font-size: 16px;\n}\n\n.buttonContainer {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 1fr;\n  gap: 0 30px;\n  grid-template-areas: \". .\";\n}\n\n.priceContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 15px;\n}\n\n.alertText {\n  font-size: 14px;\n  color: #58677d;\n  width: 75%;\n  text-align: center;\n}\n\n.alertTextContainer {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 15px;\n}\n\n*:focus {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  outline-width: 0;\n  outline: none !important;\n  box-shadow: 1px 1px 1px 1px #e4e2e2;\n}\n\n@media (min-width: 768px) {\n  label, p.property, p.propertyPrice {\n    font-size: 20px;\n  }\n\n  .alertText {\n    font-size: 18px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".calculatorContainer {\n  display: flex;\n  flex-direction: column;\n  border-radius: 20px;\n  padding: 30px;\n  box-shadow: -1px 1px 10px #e4e2e2;\n  font-family: Lato, sans-serif;\n  background: white;\n}\n\nlabel, select {\n  margin-bottom: 15px;\n}\n\nlabel, p.property {\n  color: #58677d;\n  text-align: left;\n  font-size: 16px;\n}\n\np.propertyPrice {\n  color: #00538b;\n  font-weight: 700;\n  font-size: 16px;\n}\n\n.buttonContainer {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 1fr;\n  gap: 0 30px;\n  grid-template-areas: \". .\";\n}\n\n.priceContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 15px;\n}\n\n.alertText {\n  font-size: 14px;\n  color: #58677d;\n  width: 75%;\n  text-align: center;\n}\n\n.alertTextContainer {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 15px;\n}\n\n*:focus {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  outline-width: 0;\n  outline: none !important;\n  box-shadow: 1px 1px 1px 1px #e4e2e2;\n}\n\n@media (min-width: 768px) {\n  label, p.property, p.propertyPrice {\n    font-size: 18px;\n  }\n\n  .alertText {\n    font-size: 18px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7057,7 +7057,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "select.selectRegion {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  color: #00538b;\n  border: 1px solid #e4e2e2;\n  border-radius: 5px;\n  padding: 15px;\n  font-size: 16px;\n  background: #f7f8fb url(\"data:image/svg+xml;utf8,<svg fill='%2300538b' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>\") no-repeat;\n  background-position-x: 98%;\n  background-position-y: 50%;\n}\n@media (hover: hover) {\n  select.selectRegion:hover {\n    cursor: pointer;\n  }\n}\n\n@media (min-width: 768px) {\n  select.selectRegion {\n    font-size: 20px;\n    padding: 20px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "select.selectRegion {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  color: #00538b;\n  border: 1px solid #e4e2e2;\n  border-radius: 5px;\n  padding: 10px;\n  font-size: 16px;\n  background: #f7f8fb url(\"data:image/svg+xml;utf8,<svg fill='%2300538b' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>\") no-repeat;\n  background-position-x: 98%;\n  background-position-y: 50%;\n}\n@media (hover: hover) {\n  select.selectRegion:hover {\n    cursor: pointer;\n  }\n}\n\n@media (min-width: 768px) {\n  select.selectRegion {\n    font-size: 18px;\n  }\n}\n@media (min-width: 1281px) {\n  select.selectRegion {\n    padding: 15px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7081,7 +7081,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "input.inputPrice {\n  -webkit-appearance: none;\n  flex: 1;\n  padding: 15px 0 15px 12px;\n  border: none;\n  font-size: 16px;\n  border-radius: 0 5px 5px 0;\n  color: #00538b;\n}\n\n.inputGroup {\n  display: flex;\n  margin-bottom: 15px;\n  border-radius: 5px;\n  border: 1px solid #e4e2e2;\n}\n\nspan.symbolSpan {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #e4e2e2;\n  color: #00538b;\n  width: 42px;\n  font-size: 16px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "input.inputPrice {\n  -webkit-appearance: none;\n  flex: 1;\n  padding: 10px 0 10px 12px;\n  border: none;\n  font-size: 16px;\n  border-radius: 0 5px 5px 0;\n  color: #00538b;\n}\n\n.inputGroup {\n  display: flex;\n  margin-bottom: 15px;\n  border-radius: 5px;\n  border: 1px solid #e4e2e2;\n}\n\nspan.symbolSpan {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #e4e2e2;\n  color: #00538b;\n  width: 42px;\n  font-size: 16px;\n}\n\n@media (min-width: 768px) {\n  input.inputPrice, span.symbolSpan {\n    font-size: 18px;\n  }\n}\n@media (min-width: 1281px) {\n  input.inputPrice {\n    padding: 15px 0 15px 12px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7129,7 +7129,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".resultContainer {\n  background-color: rgba(131, 196, 220, 0.2);\n  border-radius: 5px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n}\n\n.dutyLabel {\n  font-size: 14px;\n  min-height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #004e81;\n  background-color: rgba(131, 196, 220, 0.2);\n  font-weight: 300;\n}\n\n.showresult {\n  padding: 25px 5px 25px 5px;\n  border-radius: 5px;\n  overflow: hidden;\n  font-size: 16px;\n  color: #004e81;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n}\n\n@media (min-width: 768px) {\n  .dutyLabel {\n    font-size: 18px;\n  }\n\n  .showresult {\n    font-size: 40px;\n    padding: 30px 5px 30px 5px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".resultContainer {\n  background-color: rgba(131, 196, 220, 0.2);\n  border-radius: 5px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n}\n\n.dutyLabel {\n  font-size: 14px;\n  min-height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #004e81;\n  background-color: rgba(131, 196, 220, 0.2);\n  font-weight: 300;\n}\n\n.showresult {\n  padding: 15px 5px 15px 5px;\n  border-radius: 5px;\n  overflow: hidden;\n  font-size: 16px;\n  color: #004e81;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n}\n\n@media (min-width: 768px) {\n  .dutyLabel {\n    font-size: 18px;\n  }\n\n  .showresult {\n    font-size: 25px;\n    padding: 20px 5px 20px 5px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

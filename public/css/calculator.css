@@ -6,6 +6,14 @@
 
 .calcDiv {
   width: 100%;
+}
+
+.onlyCalcContainer {
+  padding: 25px;
+}
+
+.calcDivMobile {
+  width: 100%;
   height: 48vh;
   background: url("/images/calc.png") no-repeat 100%, #dde6e9;
   background-size: cover;
@@ -13,7 +21,6 @@
 
 .containerCalcText {
   background: #dde6e9;
-  padding: 25px;
   display: flex;
   flex-direction: column;
 }
@@ -62,12 +69,12 @@
   .containerCalcText {
     padding: 50px;
   }
-
-  .onlyCalcContainer {
-    padding: 50px;
-  }
 }
 @media (min-width: 1025px) {
+  .calcDivMobile {
+    display: none;
+  }
+
   .calcDiv {
     position: absolute;
     z-index: -1;
@@ -81,8 +88,7 @@
     justify-content: center;
     align-items: center;
     background: transparent;
-    padding: 0;
-    margin-left: 75px;
+    padding: 25px;
   }
 
   .mainContainer {
@@ -92,10 +98,8 @@
 
   .onlyCalcContainer {
     position: relative;
-    transform: scale(0.72);
-    width: 600px;
+    width: 700px;
     padding: 25px;
-    margin-top: -50px;
   }
 
   .calculatorTitle {
@@ -105,7 +109,7 @@
   }
 
   .calculatorDescription {
-    width: 500px;
+    width: 70%;
   }
 
   .arrowTop {
@@ -136,19 +140,15 @@
     width: 700px;
     transform: none;
     padding: 50px;
-    margin-top: 25px;
   }
 
   .containerCalcText {
     margin-left: 0;
+    padding: 75px;
   }
 
   .calculatorTitle {
     font-size: 82px;
-  }
-
-  .containerText {
-    margin-right: 150px;
   }
 
   .arrowDown {

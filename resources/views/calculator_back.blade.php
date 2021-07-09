@@ -23,7 +23,8 @@
 <body class="antialiased">
 
 <div class="mainContainer">
-    <div class="calcDiv"></div>
+    <div class="calcDivMobile"></div>
+    <div class="calcDiv">
     <div class="containerCalcText">
         <div class="containerText">
             <img src="images/top-triangle.png" alt="alt" class="arrowDown"/>
@@ -36,6 +37,7 @@
             <img src="images/top-triangle.png" alt="alt" class="arrowTop"/>
             <div id="calculator"/>
         </div>
+    </div>
     </div>
 </div>
 
